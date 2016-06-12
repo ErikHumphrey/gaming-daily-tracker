@@ -58,6 +58,10 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.lblTimeLeftGOG = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.lblTimeLeftHeroes = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -67,10 +71,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picArtGW2 = new System.Windows.Forms.PictureBox();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.lblTimeLeftHeroes = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -89,6 +89,9 @@
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -98,9 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picArtGW2)).BeginInit();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTimeLeftGW2
@@ -360,6 +360,43 @@
             this.lblTimeLeftGOG.Text = "00:00";
             this.lblTimeLeftGOG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.panel20);
+            this.panel19.Controls.Add(this.pictureBox9);
+            this.panel19.Location = new System.Drawing.Point(760, 58);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(238, 159);
+            this.panel19.TabIndex = 26;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.lblTimeLeftHeroes);
+            this.panel20.Location = new System.Drawing.Point(7, 114);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(223, 40);
+            this.panel20.TabIndex = 18;
+            // 
+            // lblTimeLeftHeroes
+            // 
+            this.lblTimeLeftHeroes.Font = new System.Drawing.Font("Helvetica", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeLeftHeroes.Location = new System.Drawing.Point(13, 3);
+            this.lblTimeLeftHeroes.Name = "lblTimeLeftHeroes";
+            this.lblTimeLeftHeroes.Size = new System.Drawing.Size(197, 35);
+            this.lblTimeLeftHeroes.TabIndex = 1;
+            this.lblTimeLeftHeroes.Text = "00:00";
+            this.lblTimeLeftHeroes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::gaming_daily_tracker.Properties.Resources.imgHeroes;
+            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(230, 108);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 2;
+            this.pictureBox9.TabStop = false;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::gaming_daily_tracker.Properties.Resources.GOGList;
@@ -450,48 +487,11 @@
             this.picArtGW2.TabIndex = 2;
             this.picArtGW2.TabStop = false;
             // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.panel20);
-            this.panel19.Controls.Add(this.pictureBox9);
-            this.panel19.Location = new System.Drawing.Point(760, 58);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(238, 159);
-            this.panel19.TabIndex = 26;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.lblTimeLeftHeroes);
-            this.panel20.Location = new System.Drawing.Point(7, 114);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(223, 40);
-            this.panel20.TabIndex = 18;
-            // 
-            // lblTimeLeftHeroes
-            // 
-            this.lblTimeLeftHeroes.Font = new System.Drawing.Font("Helvetica", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeLeftHeroes.Location = new System.Drawing.Point(13, 3);
-            this.lblTimeLeftHeroes.Name = "lblTimeLeftHeroes";
-            this.lblTimeLeftHeroes.Size = new System.Drawing.Size(197, 35);
-            this.lblTimeLeftHeroes.TabIndex = 1;
-            this.lblTimeLeftHeroes.Text = "00:00";
-            this.lblTimeLeftHeroes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::gaming_daily_tracker.Properties.Resources.imgHeroes;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(230, 108);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
-            // 
             // frmGamingDailyTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 576);
+            this.ClientSize = new System.Drawing.Size(1074, 625);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel15);
@@ -524,6 +524,9 @@
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -533,9 +536,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picArtGW2)).EndInit();
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
